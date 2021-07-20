@@ -1,11 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import TripsList from './components/TripsList';
+import Header from './components/Header';
+import 'react-native-gesture-handler';
+import Post from './components/Post';
+import feed from './assets/data/feed';
+
+const post1 = feed[0];
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+   
+      <TripsList />
+      <Header /> 
+     
+      
       <StatusBar style="auto" />
     </View>
   );
